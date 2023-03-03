@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9b3c7e3-f1be-4565-b69c-7bac04900f30" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/explorer/MarsRover.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/loyaltyPoints/Customer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/loyaltyPoints/PointsCalculator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/loyaltyPoints/PrivilegeService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/loyaltyPoints/Tier.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/loyaltyPoints/PointsCalculatorTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
