@@ -48,7 +48,7 @@ public class MarsRover {
      * All logic for movement is in this method
      * @param command char
      */
-    private static void rove(char command) {
+    public static void rove(char command) {
 //		System.out.println("Start....." + x + " " + y + " " + direction + " " + command);
         if (dir.equalsIgnoreCase("N")) {
             switch (command) {
