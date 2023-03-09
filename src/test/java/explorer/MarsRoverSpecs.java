@@ -23,31 +23,47 @@ public class MarsRoverSpecs {
                 MarsRover.setDir("N");
             }
 
-            @Test
-            public void turningLeftHeadsToWest(){
-                MarsRover.rove('L');
+            @Nested
+            @DisplayName("turning")
+            class Turn{
 
-                assertEquals(3, MarsRover.getX());
-                assertEquals(3, MarsRover.getY());
-                assertEquals("W", MarsRover.getDir());
+                @Test
+                @DisplayName("left heads to west")
+                public void turningLeftHeadsToWest(){
+                    MarsRover.rove('L');
+
+                    assertEquals("W", MarsRover.getDir());
+                }
+
+                @Test
+                @DisplayName("right heads to east")
+                public void turningRightHeadsToEast(){
+                    MarsRover.rove('R');
+
+                    assertEquals("E", MarsRover.getDir());
+                }
+                @AfterEach
+                public void positionDoesNotChange(){
+                    assertEquals(3, MarsRover.getX());
+                    assertEquals(3, MarsRover.getY());
+                }
             }
 
-            @Test
-            public void turningRightHeadsToEast(){
-                MarsRover.rove('R');
+            @Nested
+            @DisplayName("moving ahead")
+            class Move {
+                @BeforeEach
+                public void move() {
+                    MarsRover.rove('M');
+                }
 
-                assertEquals(3, MarsRover.getX());
-                assertEquals(3, MarsRover.getY());
-                assertEquals("E", MarsRover.getDir());
-            }
-
-            @Test
-            public void movingHeadsToNorth(){
-                MarsRover.rove('M');
-
-                assertEquals(3, MarsRover.getX());
-                assertEquals(4, MarsRover.getY());
-                assertEquals("N", MarsRover.getDir());
+                @Test
+                @DisplayName("heads to north")
+                public void movingHeadsToNorth(){
+                    assertEquals(3, MarsRover.getX());
+                    assertEquals(4, MarsRover.getY());
+                    assertEquals("N", MarsRover.getDir());
+                }
             }
         }
 
@@ -59,31 +75,46 @@ public class MarsRoverSpecs {
                 MarsRover.setDir("S");
             }
 
-            @Test
-            public void turningLeftHeadsToEast(){
-                MarsRover.rove('L');
+            @Nested
+            @DisplayName("turning")
+            class Turn{
 
-                assertEquals(3, MarsRover.getX());
-                assertEquals(3, MarsRover.getY());
-                assertEquals("E", MarsRover.getDir());
+                @Test
+                @DisplayName("left heads to east")
+                public void turningLeftHeadsToEast(){
+                    MarsRover.rove('L');
+                    assertEquals("E", MarsRover.getDir());
+                }
+
+                @Test
+                @DisplayName("right heads to west")
+                public void turningRightHeadsToWest(){
+                    MarsRover.rove('R');
+                    assertEquals("W", MarsRover.getDir());
+                }
+
+                @AfterEach
+                public void positionDoesNotChange(){
+                    assertEquals(3, MarsRover.getX());
+                    assertEquals(3, MarsRover.getY());
+                }
             }
 
-            @Test
-            public void turningRightHeadsToWest(){
-                MarsRover.rove('R');
+            @Nested
+            @DisplayName("moving ahead")
+            class Move {
+                @BeforeEach
+                public void move() {
+                    MarsRover.rove('M');
+                }
 
-                assertEquals(3, MarsRover.getX());
-                assertEquals(3, MarsRover.getY());
-                assertEquals("W", MarsRover.getDir());
-            }
-
-            @Test
-            public void movingHeadsToSouth(){
-                MarsRover.rove('M');
-
-                assertEquals(3, MarsRover.getX());
-                assertEquals(2, MarsRover.getY());
-                assertEquals("S", MarsRover.getDir());
+                @Test
+                @DisplayName("heads to south")
+                public void movingHeadsToSouth(){
+                    assertEquals(3, MarsRover.getX());
+                    assertEquals(2, MarsRover.getY());
+                    assertEquals("S", MarsRover.getDir());
+                }
             }
         }
 
@@ -95,31 +126,46 @@ public class MarsRoverSpecs {
                 MarsRover.setDir("E");
             }
 
-            @Test
-            public void turningLeftHeadsToNorth(){
-                MarsRover.rove('L');
+            @Nested
+            @DisplayName("turning")
+            class Turn{
 
-                assertEquals(3, MarsRover.getX());
-                assertEquals(3, MarsRover.getY());
-                assertEquals("N", MarsRover.getDir());
+                @Test
+                @DisplayName("left heads to north")
+                public void turningLeftHeadsToNorth(){
+                    MarsRover.rove('L');
+                    assertEquals("N", MarsRover.getDir());
+                }
+
+                @Test
+                @DisplayName("right heads to south")
+                public void turningRightHeadsToSouth(){
+                    MarsRover.rove('R');
+
+                    assertEquals("S", MarsRover.getDir());
+                }
+                @AfterEach
+                public void positionDoesNotChange(){
+                    assertEquals(3, MarsRover.getX());
+                    assertEquals(3, MarsRover.getY());
+                }
             }
 
-            @Test
-            public void turningRightHeadsToSouth(){
-                MarsRover.rove('R');
+            @Nested
+            @DisplayName("moving ahead")
+            class Move {
+                @BeforeEach
+                public void move() {
+                    MarsRover.rove('M');
+                }
 
-                assertEquals(3, MarsRover.getX());
-                assertEquals(3, MarsRover.getY());
-                assertEquals("S", MarsRover.getDir());
-            }
-
-            @Test
-            public void movingHeadsToEast(){
-                MarsRover.rove('M');
-
-                assertEquals(4, MarsRover.getX());
-                assertEquals(3, MarsRover.getY());
-                assertEquals("E", MarsRover.getDir());
+                @Test
+                @DisplayName("heads to east")
+                public void movingHeadsToEast(){
+                    assertEquals(4, MarsRover.getX());
+                    assertEquals(3, MarsRover.getY());
+                    assertEquals("E", MarsRover.getDir());
+                }
             }
         }
 
@@ -131,31 +177,47 @@ public class MarsRoverSpecs {
                 MarsRover.setDir("W");
             }
 
-            @Test
-            public void turningLeftHeadsToSouth(){
-                MarsRover.rove('L');
+            @Nested
+            @DisplayName("turning")
+            class Turn{
 
-                assertEquals(3, MarsRover.getX());
-                assertEquals(3, MarsRover.getY());
-                assertEquals("S", MarsRover.getDir());
+                @Test
+                @DisplayName("left heads to south")
+                public void turningLeftHeadsToWest(){
+                    MarsRover.rove('L');
+
+                    assertEquals("S", MarsRover.getDir());
+                }
+
+                @Test
+                @DisplayName("right heads to north")
+                public void turningRightHeadsToNorth(){
+                    MarsRover.rove('R');
+
+                    assertEquals("N", MarsRover.getDir());
+                }
+                @AfterEach
+                public void positionDoesNotChange(){
+                    assertEquals(3, MarsRover.getX());
+                    assertEquals(3, MarsRover.getY());
+                }
             }
 
-            @Test
-            public void turningRightHeadsToNorth(){
-                MarsRover.rove('R');
+            @Nested
+            @DisplayName("moving ahead")
+            class Move {
+                @BeforeEach
+                public void move() {
+                    MarsRover.rove('M');
+                }
 
-                assertEquals(3, MarsRover.getX());
-                assertEquals(3, MarsRover.getY());
-                assertEquals("N", MarsRover.getDir());
-            }
-
-            @Test
-            public void movingHeadsToWest(){
-                MarsRover.rove('M');
-
-                assertEquals(2, MarsRover.getX());
-                assertEquals(3, MarsRover.getY());
-                assertEquals("W", MarsRover.getDir());
+                @Test
+                @DisplayName("heads to west")
+                public void movingHeadsToWest(){
+                    assertEquals(2, MarsRover.getX());
+                    assertEquals(3, MarsRover.getY());
+                    assertEquals("W", MarsRover.getDir());
+                }
             }
         }
     }
