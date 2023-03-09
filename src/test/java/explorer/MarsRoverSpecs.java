@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class MarsRoverSpecs {
     @Nested
     @DisplayName("When rover is standing @ 3,3")
-    class AtPosition3_3{
+    class AtPosition3X3 {
 
         @BeforeEach
         public void setRoversInitialPosition(){
