@@ -6,9 +6,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class MarsRoverSpecs {
     @Nested
-    @DisplayName("Rover standing @ co-ordinate 3, 3")
+    @DisplayName("Rover standing @ 3,3")
     class AtPosition3X3 {
-
         @BeforeEach
         public void setRoversInitialPosition(){
             MarsRover.setX(3);
@@ -58,7 +57,7 @@ public class MarsRoverSpecs {
                 }
 
                 @Test
-                @DisplayName("heads to north")
+                @DisplayName("heads to north @ 3,4")
                 public void movingHeadsToNorth(){
                     assertEquals(3, MarsRover.getX());
                     assertEquals(4, MarsRover.getY());
@@ -109,7 +108,7 @@ public class MarsRoverSpecs {
                 }
 
                 @Test
-                @DisplayName("heads to south")
+                @DisplayName("heads to south @ 3,2")
                 public void movingHeadsToSouth(){
                     assertEquals(3, MarsRover.getX());
                     assertEquals(2, MarsRover.getY());
@@ -160,7 +159,7 @@ public class MarsRoverSpecs {
                 }
 
                 @Test
-                @DisplayName("heads to east")
+                @DisplayName("heads to east @ 4,3")
                 public void movingHeadsToEast(){
                     assertEquals(4, MarsRover.getX());
                     assertEquals(3, MarsRover.getY());
@@ -212,7 +211,7 @@ public class MarsRoverSpecs {
                 }
 
                 @Test
-                @DisplayName("heads to west")
+                @DisplayName("heads to west @ 2,3")
                 public void movingHeadsToWest(){
                     assertEquals(2, MarsRover.getX());
                     assertEquals(3, MarsRover.getY());
