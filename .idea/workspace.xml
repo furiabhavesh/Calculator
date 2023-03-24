@@ -114,7 +114,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;loyaltypoints.PointsCalculatorTest&quot;" />
+            <option value="&quot;CalculatorSpecs&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -124,52 +124,22 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PointsCalculatorTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;loyaltyPoints.PointsCalculatorTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="LoyaltyPoints" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="PointsCalculatorTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="LoyaltyPoints.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="loyaltyPoints.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="loyaltypoints" />
-      <option name="MAIN_CLASS_NAME" value="loyaltyPoints.PointsCalculatorTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="LoyaltyPoints" />
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.PointsCalculatorTest" />
-        <item itemvalue="Gradle.LoyaltyPoints [test]" />
-        <item itemvalue="Gradle.PointsCalculatorTest (1)" />
-        <item itemvalue="Gradle.PointsCalculatorTest" />
+        <item itemvalue="Gradle.CalculatorSpecs" />
       </list>
     </recent_temporary>
   </component>
