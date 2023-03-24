@@ -1,5 +1,4 @@
 import com.ee.Calculator;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -28,10 +27,8 @@ public class CalculatorSpecs {
     }
 
     @Test
-    public void divideTwoNumbers() {
-        //when
-
-        // then
+    public void divideTwoNumbersResultsInSixDecimalPrecision() {
+        // when - then
         assertEquals(0.666666, calculator.divide(2.0, 3.0));
         assertEquals(0.333333, calculator.divide(1.0, 3.0));
         assertEquals(0.999999, calculator.divide(5.0, 5.000001));
