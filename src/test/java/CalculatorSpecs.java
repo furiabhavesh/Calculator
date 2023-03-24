@@ -26,4 +26,14 @@ public class CalculatorSpecs {
         assertEquals(-1.0, calculator.subtract(2.0, 3.0));
         assertEquals(-2.0, calculator.subtract(2.0, 4.0));
     }
+
+    @Test
+    public void divideTwoNumbers() {
+        //when
+
+        // then
+        assertEquals(0.666666, calculator.divide(2.0, 3.0));
+        assertEquals(0.333333, calculator.divide(1.0, 3.0));
+        assertEquals(0.999999, calculator.divide(5.0, 5.000001));
+    }
 }
