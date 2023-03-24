@@ -14,4 +14,17 @@ public class CalculatorSpecs {
         assertEquals(5.0, calculator.add(2, 3));
         assertEquals(9.0, calculator.add(1, 8));
     }
+
+    @Test
+    public void subtractTwoNumbers() {
+        //given
+        Calculator calculator = new Calculator();
+
+        //when
+        double difference = calculator.subtract(2.0, 3.0);
+
+        //then
+        assertEquals(-1.0, difference);
+
+    }
 }
