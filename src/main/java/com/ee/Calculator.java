@@ -23,4 +23,8 @@ public class Calculator {
                 .setScale(PRECISION, RoundingMode.DOWN)
                 .doubleValue();
     }
+
+    public String replay() {
+        return "";
+    }
 }

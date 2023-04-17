@@ -2,8 +2,7 @@ import com.ee.Calculator;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class CalculatorSpecs {
 
@@ -38,7 +37,16 @@ public class CalculatorSpecs {
     @Test
     public void divisionByZeroResultsInErrorMessage() {
         // when - then
-//        double difference = calculator.divide(2.0, 0);
         assertThrows(ArithmeticException.class, ()-> calculator.divide(2,0));
+    }
+
+    @Test
+    public void replayAdd() {
+        //Given
+        calculator.add(5,3);
+        //When
+        String actual = calculator.replay();
+        //Then
+        assertEquals("5+3", actual);
     }
 }
