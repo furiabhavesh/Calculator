@@ -47,6 +47,6 @@ public class CalculatorSpecs {
         //When
         String actual = calculator.replay();
         //Then
-        assertEquals("5+3", actual);
+        assertEquals("5.0 + 3.0 = 8.0", actual);
     }
 }
