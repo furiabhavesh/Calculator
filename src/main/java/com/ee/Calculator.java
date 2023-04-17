@@ -16,6 +16,9 @@ public class Calculator {
     }
 
     public double divide(double dividend, double divisor) {
+        if(divisor == 0){
+            throw new ArithmeticException("Can't divide by zero");
+        }
         return BigDecimal.valueOf(dividend/divisor)
                 .setScale(PRECISION, RoundingMode.DOWN)
                 .doubleValue();
