@@ -5,12 +5,13 @@ import java.math.RoundingMode;
 
 public class Calculator {
 
-    String operation;
+    private String operation="";
     private static final int PRECISION = 6;
 
     public double add(double operand1, double operand2){
         double sum = operand1 + operand2;
-        operation = String.valueOf(operand1) + " + " + String.valueOf(operand2)+ " = " + String.valueOf(sum);
+        operation += operand1 + " + " + operand2 + " = " + sum;
+        operation += "; ";
         return sum;
     }
 
@@ -28,6 +29,6 @@ public class Calculator {
     }
 
     public String replay(){
-        return operation;
+        return operation.substring(0, operation.length()-2);
     }
 }

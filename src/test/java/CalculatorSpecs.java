@@ -49,4 +49,17 @@ public class CalculatorSpecs {
         //Then
         assertEquals("5.0 + 3.0 = 8.0", actual);
     }
+
+    @Test
+    public void replay2Add(){
+        //Given
+        calculator.add(5,3);
+        calculator.add(5,3);
+
+        //When
+        String result = calculator.replay();
+
+        //Then
+        assertEquals("5.0 + 3.0 = 8.0; 5.0 + 3.0 = 8.0", result);
+    }
 }
